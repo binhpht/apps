@@ -1,0 +1,44 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="appTask" class="com.binhpht.apps.common.AppTask" />
+
+	<!-- Spring Quartz -->
+	<bean name="appJob" class="org.springframework.scheduling.quartz.JobDetailBean">
+
+		<property name="jobClass" value="com.binhpht.apps.common.AppJob" />
+
+		<property name="jobDataAsMap">
+			<map>
+				<entry key="appTask" value-ref="appTask" />
+			</map>
+		</property>
+
+	</bean>
+
+
+	<!-- Cron Trigger, run every 5 minutes -->
+	<bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+
+		<property name="jobDetail" ref="appJob" />
+		<property name="cronExpression" value="0 0 10 * * ?" />
+
+	</bean>
+
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="jobDetails">
+			<list>
+				<ref bean="appJob" />
+			</list>
+		</property>
+
+		<property name="triggers">
+			<list>
+				<ref bean="cronTrigger" />
+			</list>
+		</property>
+	</bean>
+
+</beans>

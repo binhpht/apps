@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	<definition name="index1" template="/WEB-INF/templates/default.jsp">
+		<put-attribute name="title" value="QB Homepage"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
+		<put-attribute name="sidebar" value="/WEB-INF/tiles/sidebar.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/content.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp"></put-attribute>
+	</definition>
+	<definition name="location" template="/WEB-INF/templates/default.jsp">
+		<put-attribute name="title" value="QB Homepage"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
+		<put-attribute name="sidebar" value="/WEB-INF/tiles/sidebar.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/location.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp"></put-attribute>
+	</definition>
+	<definition name="weatherlocation" template="/WEB-INF/templates/default.jsp">
+		<put-attribute name="title" value="QB Homepage"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
+		<put-attribute name="sidebar" value="/WEB-INF/tiles/sidebar.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/weatherlocation.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp"></put-attribute>
+	</definition>
+	<definition name="weatherqb" template="/WEB-INF/templates/default.jsp">
+		<put-attribute name="title" value="Thoi tiet Quang Binh"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
+		<put-attribute name="sidebar" value="/WEB-INF/tiles/sidebar.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/weatherqb.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp"></put-attribute>
+	</definition>
+</tiles-definitions>

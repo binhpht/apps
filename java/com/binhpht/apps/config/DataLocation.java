@@ -1,0 +1,215 @@
+package com.binhpht.apps.config;
+
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+public class DataLocation {
+	private List<String> lstLeThuy = new ArrayList<String>();
+	public String returnWeather(String code){
+		Hashtable<String, String> ht = new Hashtable<String, String>();
+
+		ht.put("1","bão nhiệt đới");
+		ht.put("2","bão");
+		ht.put("3","giông bão nghiêm trọng");
+		ht.put("4","dông");
+		ht.put("5","mưa trộn và tuyết");
+		ht.put("6","mưa và mưa đá kết hợp");
+		ht.put("7","tuyết và mưa đá kết hợp");
+		ht.put("8","đông lạnh mưa phùn");
+		ht.put("9","mưa phùn");
+		ht.put("10","mưa lạnh");
+		ht.put("11","mưa bất chợt");
+		ht.put("12","mưa thình lình");
+		ht.put("13"," gió và tuyết rơi");
+		ht.put("14","mưa thình lình và tuyết nhẹ");
+		ht.put("15","có gió tuyết");
+		ht.put("16","tuyết");
+		ht.put("17","mưa đá");
+		ht.put("18","mưa đá");
+		ht.put("19","bụi");
+		ht.put("20","sương mù");
+		ht.put("21","khói mù");
+		ht.put("22","mù mịt");
+		ht.put("23","sự thẹn");
+		ht.put("24","có nhiều gió");
+		ht.put("25","lạnh");
+		ht.put("26","nhiều mây");
+		ht.put("27","ban đêm có nhiều mây");
+		ht.put("28","ngày có nhiều mây");
+		ht.put("29","trời nhiều mây");
+		ht.put("30","ngày nhiều mây");
+		ht.put("31","trời trong");
+		ht.put("32","nắng");
+		ht.put("33","trời tương đối (ban đêm)");
+		ht.put("34","trời tương đối (ngày)");
+		ht.put("35","hỗn hợp mưa và mưa đá");
+		ht.put("36","nóng");
+		ht.put("37","dông cô lập");
+		ht.put("38","dông rải rác");
+		ht.put("39","dông rải rác");
+		ht.put("40","mưa rải rác");
+		ht.put("41","tuyết nặng");
+		ht.put("42","mưa tuyết rải rác");
+		ht.put("43","tuyết nặng");
+		ht.put("44","phần mây");
+		ht.put("45","trời giông và mưa");
+		ht.put("46","vòi sen tuyết");
+		ht.put("47","trời giông tố");
+		ht.put("3200","không có sẵn");
+		ht.put("Sun","Chủnhật");
+		ht.put("Mon","Thứ hai");
+		ht.put("Tue","Thứ ba");
+		ht.put("Wed","Thứ tư");
+		ht.put("Thu","Thứ năm");
+		ht.put("Fri","Thứ sáu");
+		ht.put("Sat","Thứ bảy");
+		ht.put("Jan","Tháng 1");
+		ht.put("Feb","Tháng 2");
+		ht.put("Mar","Tháng 3");
+		ht.put("Apr","Tháng 4");
+		ht.put("May","Tháng 5");
+		ht.put("Jun","Tháng 6");
+		ht.put("Jul","Tháng 7");
+		ht.put("Aug","Tháng 7");
+		ht.put("Sep","Tháng 9");
+		ht.put("Oct","Tháng 10");
+		ht.put("Nov","Tháng 11");
+		ht.put("Dec","Tháng 12");
+		return ht.get(code);
+		
+	}
+
+	public List<String> createData() {
+		lstLeThuy.add("91877710");;
+		lstLeThuy.add("91880125");;
+		lstLeThuy.add("91886833");;
+		lstLeThuy.add("91885420");;
+		lstLeThuy.add("91884946");;
+		lstLeThuy.add("91885469");;
+		lstLeThuy.add("91882521");;
+		lstLeThuy.add("91879024");;
+		lstLeThuy.add("91881155");;
+		lstLeThuy.add("91883591");;
+		lstLeThuy.add("91879312");;
+		lstLeThuy.add("91880315");;
+		lstLeThuy.add("91886383");;
+		lstLeThuy.add("91887753");;
+		lstLeThuy.add("91887565");;
+		lstLeThuy.add("91879154");;
+		lstLeThuy.add("91886282");;
+		lstLeThuy.add("91878994");;
+		lstLeThuy.add("56124830");;
+		lstLeThuy.add("56124849");;
+		lstLeThuy.add("56124190");;
+		lstLeThuy.add("91877565");;
+		lstLeThuy.add("91883855");;
+		lstLeThuy.add("56123677");;
+		lstLeThuy.add("91882696");;
+		lstLeThuy.add("91886197");;
+		lstLeThuy.add("91880925");;
+		lstLeThuy.add("91885986");;
+		lstLeThuy.add("91882380");;
+		lstLeThuy.add("91881503");;
+		lstLeThuy.add("91883202");;
+		lstLeThuy.add("91882853");;
+		lstLeThuy.add("91886168");;
+		lstLeThuy.add("91881947");;
+		lstLeThuy.add("91886540");;
+		lstLeThuy.add("91888307");;
+		lstLeThuy.add("91887703");;
+		lstLeThuy.add("91885124");;
+		lstLeThuy.add("91877276");;
+		lstLeThuy.add("91881003");;
+		lstLeThuy.add("91881347");;
+		lstLeThuy.add("91880079");;
+		lstLeThuy.add("91882684");;
+		lstLeThuy.add("91879673");;
+		lstLeThuy.add("91885248");;
+		lstLeThuy.add("91879162");;
+		lstLeThuy.add("91887503");;
+		lstLeThuy.add("91882729");;
+		lstLeThuy.add("91879501");;
+		lstLeThuy.add("91884407");;
+		lstLeThuy.add("91881157");;
+		lstLeThuy.add("91888713");;
+		lstLeThuy.add("91885363");;
+		lstLeThuy.add("91881629");;
+		lstLeThuy.add("91877799");;
+		lstLeThuy.add("91885647");;
+		lstLeThuy.add("91880605");;
+		lstLeThuy.add("91881022");;
+		lstLeThuy.add("91887501");;
+		lstLeThuy.add("91883629");;
+		lstLeThuy.add("91884241");;
+		lstLeThuy.add("91886716");;
+		lstLeThuy.add("91885683");;
+		lstLeThuy.add("91884100");;
+		lstLeThuy.add("91883097");;
+		lstLeThuy.add("91882108");;
+		lstLeThuy.add("91887882");;
+		lstLeThuy.add("91882085");;
+		lstLeThuy.add("91881540");;
+		lstLeThuy.add("91883699");;
+		lstLeThuy.add("91888930");;
+		lstLeThuy.add("91882141");;
+		lstLeThuy.add("91881070");;
+		lstLeThuy.add("91885318");;
+		lstLeThuy.add("91885967");;
+		lstLeThuy.add("91882657");;
+		lstLeThuy.add("91883479");;
+		lstLeThuy.add("91879420");;
+		lstLeThuy.add("91882644");;
+		lstLeThuy.add("91877554");;
+		lstLeThuy.add("91882668");;
+		lstLeThuy.add("91883669");;
+		lstLeThuy.add("91881921");;
+		lstLeThuy.add("91879077");;
+		lstLeThuy.add("91879457");;
+		lstLeThuy.add("91885336");;
+		lstLeThuy.add("91883006");;
+		lstLeThuy.add("91884891");;
+		lstLeThuy.add("91885876");;
+		lstLeThuy.add("91879470");;
+		lstLeThuy.add("91883416");;
+		lstLeThuy.add("91879796");;
+		lstLeThuy.add("91882558");;
+		lstLeThuy.add("91881968");;
+		lstLeThuy.add("91880211");;
+		lstLeThuy.add("91877877");;
+		lstLeThuy.add("91882047");;
+		lstLeThuy.add("91879228");;
+		lstLeThuy.add("91884811");;
+		lstLeThuy.add("91880409");;
+		lstLeThuy.add("91888815");;
+		lstLeThuy.add("91883438");;
+		lstLeThuy.add("91884108");;
+		lstLeThuy.add("91881173");;
+		lstLeThuy.add("91881203");;
+		lstLeThuy.add("91877286");;
+		lstLeThuy.add("91878825");;
+		lstLeThuy.add("91878893");;
+		lstLeThuy.add("91881182");;
+		lstLeThuy.add("91885980");;
+		lstLeThuy.add("91878983");;
+		lstLeThuy.add("91886685");;
+		lstLeThuy.add("91888553");;
+		lstLeThuy.add("91888735");;
+		lstLeThuy.add("91882102");;
+		lstLeThuy.add("91883309");;
+		return lstLeThuy;
+
+	}
+
+	public List<String> getLstLeThuy() {
+		return lstLeThuy;
+	}
+
+	public void setLstLeThuy(List<String> lstLeThuy) {
+		this.lstLeThuy = lstLeThuy;
+	}
+
+}

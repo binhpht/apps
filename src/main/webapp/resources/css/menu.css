@@ -1,0 +1,48 @@
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.context_menu{
+	background-color:white;
+	border:1px solid gray;
+    height:300px;
+    overflow-y:scroll;
+    overflow: scroll;
+    
+    
+    
+}
+
+.context_menu_item{
+	padding:3px 6px;
+ 	 
+ 
+}
+.context_menu_item:hover{
+	background-color:#CCCCCC;
+	
+		 
+	
+}
+.context_menu_separator{
+	background-color:gray;
+	height:1px;
+	margin:0;
+	padding:0;
+
+
+}
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
